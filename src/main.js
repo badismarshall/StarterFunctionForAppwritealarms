@@ -1,4 +1,4 @@
-import { Client, Database, Query} from 'node-appwrite';
+import { Client, Databases, Query} from 'node-appwrite';
 
 // Initialize the Appwrite SDK
 const client = new Client()
@@ -6,7 +6,7 @@ client.setEndpoint('https://cloud.appwrite.io/v1'); // Replace with your Appwrit
 client.setProject('65466df763778e058c34'); // Replace with your Appwrite project ID
 
 // Initialize the Database service
-const database = new Database(client);
+const database = new Databases(client);
 
 export default async ({ res, log }) => {
     // // we need to add the required fields to the .env file
